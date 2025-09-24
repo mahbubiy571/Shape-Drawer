@@ -25,17 +25,9 @@ function draw(): void {
   const element = document.createElement("div");
 
   if (shape === "triangle") {
-    element.style.width = "0";
-    element.style.height = "0";
-    element.style.backgroundColor = "transparent";
     element.style.borderLeft = `${w / 2}px solid transparent`;
     element.style.borderRight = `${w / 2}px solid transparent`;
     element.style.borderBottom = `${h}px solid ${fillColor}`;
-    element.style.borderTop = "0";
-    element.style.borderRadius = "0";
-    if (border > 0) {
-      element.style.filter = `drop-shadow(0 0 0 ${strokeColor})`;
-    }
   } else {
     element.style.width = `${w}px`;
     element.style.height = `${h}px`;
