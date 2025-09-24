@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/style.css" rel="stylesheet" />
+    <title>Shakl Chizish</title>
+  </head>
+  <body class="page">
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="title">⚙️ Shakl sozlamalari</h2>
+
+          <div class="form">
+            <select id="shapeSelect" class="select">
+              <option value="rectangle">Kvadrat</option>
+              <option value="circle">Doira</option>
+              <option value="triangle">Uchburchak</option>
+            </select>
+
+            <input
+              id="widthInput"
+              type="number"
+              placeholder="Eni"
+              class="input"
+              value="200"
+            />
+            <input
+              id="heightInput"
+              type="number"
+              placeholder="Bo‘yi"
+              class="input"
+              value="150"
+            />
+            <input
+              id="borderInput"
+              type="number"
+              placeholder="Border"
+              class="input"
+              value="4"
+            />
+
+            <label class="label">Chegara rangi:</label>
+            <input
+              id="borderColorInput"
+              type="color"
+              class="color-input"
+              value="#0f172a"
+            />
+
+            <label class="label">Fon rangi:</label>
+            <input
+              id="bgColorInput"
+              type="color"
+              class="color-input"
+              value="#60a5fa"
+            />
+
+            <div class="btn-group">
+              <button id="drawBtn" class="btn btn-primary">Chizish</button>
+              <button id="resetBtn" class="btn btn-secondary">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-body center">
+          <h2 class="title">🖼 Natija</h2>
+          <div id="canvas" class="canvas"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/main.ts"></script>
+  </body>
+</html>
